@@ -3,6 +3,24 @@ span{
     font-weight: bold;
     margin: 2px;
 }
-body{
-    background-color: black;
+
+
+
+@media (max-width:480px) {
+    .card{
+        margin-top: -33px;
+        min-width: 100vw;
+    }
+    img{
+        height: 250px;
+    }
+    .card-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-footer button{
+        margin: 2px;
+        padding: 9px;
+    }
 }
