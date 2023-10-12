@@ -55,5 +55,8 @@ roundSelector.addEventListener('change',() => {
     winingScore = parseInt(roundSelector.value);//need to convert into number from a string type
 })
 
-resetBtn.addEventListener('click',reset)
+resetBtn.addEventListener('click',() => {
+    roundSelector.value = 3;
+    reset();
+})
 
