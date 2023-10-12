@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div class="card-container d-flex justify-content-center align-item-center mt-4 p-2">
+        <div class="card w-50 h-75">
+            <div class="card-img">
+                <img src="./img/pingPong.jpg" class="w-100" height="500" alt="game image">
+            </div>
+            <div class="card-header text-center">
+                <h3>Ping Pong ScoreKeeper</h3>
+            </div>
+            <div class="card-body">
+                <div class="scores text-center">
+                    <span class="player1" id="playerOneScore">0</span> <span>to</span> <span class="player2" id="playerTwoScore">0</span>
+                </div>
+                <p class="text-center fs-6">Use the buttons below to Update scores</p>
+                <div class="rounds text-center fs-5 fw-bold">
+                    <label for="roundsSelector">Playing To</label> 
+                    <select class="form-select d-inline-block ms-1" style="width: 60px;" name="rounds" id="roundsSelector">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-footer d-flex align-item-center justify-content-center gap-1 p-3">
+                <button class="btn btn-warning flex-grow-1 p-2" id="playerOneBtn">+1 Player One</button>
+                <button class="btn btn-success flex-grow-1" id="playerTwoBtn">+1 Player Two</button>
+                <button class="btn btn-danger flex-grow-1" id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
